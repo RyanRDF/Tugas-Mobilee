@@ -14,19 +14,27 @@ class List extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: SizedBox(
-        height: 400,
+        height: 700,
         child: ListView.builder(
           itemCount: 99,
           itemBuilder: (BuildContext context, int index) {
-            return Card(
-              key: ValueKey(99),
-              margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-              child: Padding(
-                padding: const EdgeInsets.all(10),
-                child: Text(
-                  'Dummi $index',
-                ),
+            return ListTile(
+              leading: Text('$index'),
+              trailing: const Icon(
+                Icons.delete,
+                color: Colors.red,
               ),
+              title: Text('Dummi '),
+              // child: Card(
+              //   key: ValueKey(99),
+              //   margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+              //   child: Padding(
+              //     padding: const EdgeInsets.all(10),
+              //     child: Text(
+              //       'Dummi $index',
+              //     ),
+              //   ),
+              // ),
             );
           },
         ),
