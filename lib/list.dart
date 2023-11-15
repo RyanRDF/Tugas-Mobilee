@@ -33,7 +33,7 @@ class List extends StatelessWidget {
                 Icons.delete,
                 color: Colors.red,
               ),
-              title: Text('Dummi '),
+              title: Text('Dummy '),
               // child: Card(
               //   key: ValueKey(99),
               //   margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
