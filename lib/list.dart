@@ -38,11 +38,16 @@ class List extends StatelessWidget {
                   color: Colors.red,
                 ),
               ),
+
+              // ICON BIASA
               // trailing: const Icon(
               //   Icons.delete,
               //   color: Colors.red,
               // ),
+
               title: Text('Dummy '),
+
+              //CARD
               // child: Card(
               //   key: ValueKey(99),
               //   margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
