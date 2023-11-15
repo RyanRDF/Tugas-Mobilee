@@ -7,6 +7,15 @@ class List extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/Login');
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          ),
+        ),
         title: const Text(
           "Data Produk",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
