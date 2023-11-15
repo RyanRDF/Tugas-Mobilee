@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_mobile_1/main.dart';
 
 class List extends StatelessWidget {
   const List({super.key});
@@ -32,6 +33,8 @@ class List extends StatelessWidget {
               trailing: IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/List');
+                  Tooltip:
+                  'Hapus';
                 },
                 icon: const Icon(
                   Icons.delete,
@@ -62,6 +65,13 @@ class List extends StatelessWidget {
           },
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _tap,
+        tooltip: 'tambah barang',
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
+
+void _tap() {}
