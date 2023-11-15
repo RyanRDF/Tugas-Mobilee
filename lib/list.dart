@@ -28,11 +28,20 @@ class List extends StatelessWidget {
           itemCount: 99,
           itemBuilder: (BuildContext context, int index) {
             return ListTile(
-              leading: Text('$index'),
-              trailing: const Icon(
-                Icons.delete,
-                color: Colors.red,
+              leading: Text('${index + 1}'),
+              trailing: IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/List');
+                },
+                icon: const Icon(
+                  Icons.delete,
+                  color: Colors.red,
+                ),
               ),
+              // trailing: const Icon(
+              //   Icons.delete,
+              //   color: Colors.red,
+              // ),
               title: Text('Dummy '),
               // child: Card(
               //   key: ValueKey(99),
